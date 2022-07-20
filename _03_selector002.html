@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디선택자, 클래스선택자</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <h1 id="title">Jquery</h1>
+    <h2>선택자</h2>
+    <h3 class="content">직접선택자</h3>
+    <h3 class="content">관계선택자</h3>
+    <script>
+        $(document).ready(function () {
+            $("*").css("text-align", "center");
+            $("#title").css("color", "darkgray")
+                        .css("border", "3px solid black")
+                        .css("backgroundColor", "chocolate")
+                        .css("fontSize", "90px")
+                        .css("margin", "30px");
+            $(".content").css("color", "purple");
+        });
+    </script>
+</body>
+
+</html>
